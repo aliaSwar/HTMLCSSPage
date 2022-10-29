@@ -1,0 +1,132 @@
+            /* Start Global Rule */
+            
+            * {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Work Sans', sans-serif;
+            }
+            
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* Large  */
+            
+            @media (min-width:1200px) {
+                .container {
+                    width: 1170px;
+                }
+            }
+            /* Meduim  */
+            
+            @media (min-width:992px) {
+                .container {
+                    width: 970px;
+                }
+            }
+            /* Small  */
+            
+            @media (min-width:768px) {
+                .container {
+                    width: 750px;
+                }
+            }
+            /*  End Global Rules */
+            /*  Start Header  */
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .logo {
+                width: 60px;
+                height: 24px;
+            }
+            
+            .header .container {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            
+            .links {
+                position: relative;
+            }
+            
+            .links .icon {
+                display: flex;
+                flex-wrap: wrap;
+                width: 30px;
+                justify-content: flex-end;
+            }
+            
+            .links .icon span {
+                background-color: #333;
+                margin-bottom: 5px;
+                height: 2px;
+            }
+            
+            .links .icon span:first-child {
+                width: 100%;
+            }
+            
+            .links .icon span:nth-child(2) {
+                width: 60%;
+            }
+            
+            .links .icon span:last-child {
+                width: 100%;
+            }
+            
+            .links :hover span:nth-child(2) {
+                width: 100%;
+            }
+            
+            .links ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                background-color: #f6f6f6;
+                position: absolute;
+                right: 0;
+                min-width: 200px;
+                top: calc(100% + 20px);
+                display: none;
+                z-index: 1;
+            }
+            
+            .links ul::before {
+                content: "";
+                border-style: solid;
+                border-width: 20px;
+                right: 0px;
+                top: -40px;
+                border-color: transparent transparent #f6f6f6 transparent;
+                position: absolute;
+            }
+            
+            li {
+                padding: 20px;
+                text-align: left;
+            }
+            
+            li a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            li :hover {
+                padding-left: 40px;
+                transition: 0.3s;
+            }
+            
+            .header .links:hover ul {
+                display: block;
+            }
+            /*   End Header */
